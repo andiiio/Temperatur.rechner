@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TemperatureConverter</title>
+		<script>
+			function convertToFahrenheit()
+			{var num1=document.getElementById('temperature').value*1.0;
+			document.getElementById('result').innerHTML=(num1*9/5)+32;
+			}
+			function convertToCelsius()
+			{var num1=document.getElementById('temperature').value*1.0;
+			document.getElementById('result').innerHTML=(num1-32)*5/9;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>!!!CONVERT YOUR TEMPERATURE WITH ONE CLICK!!!</h1><br>
+		<form>
+		  <label for="temperature">Your temperature:</label>
+		  <input type="text" id="temperature" name="temperature"><br><br>
+		</form>
+		<button onclick="convertToFahrenheit()">
+		Convert to Fahrenheit
+		</button>
+		<button onclick="convertToCelsius()">
+		Convert to Celsius
+		</button>
+		<p id="result">
+		</p>
+	</body>
+</html>
